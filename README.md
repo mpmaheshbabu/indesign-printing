@@ -7,7 +7,7 @@ As one of India's best digital print providers, we're used to automating as many
 
 To install:
 1. Clone repo to a local folder.
-2. Copy the scripts(.jsx files) to "C:\Program Files\Adobe\Adobe InDesign CC 2019\Scripts\Scripts Panel".
+2. Copy the scripts(.jsx files) to `C:\Program Files\Adobe\Adobe InDesign CC 2019\Scripts\Scripts Panel`.
 3. Copy templates folder to any local drive/folder.
 4. Define print preset `HQsRGB`, open Indesign and navigate to the following 
     `File > Adobe PDF Presets > Define` 
@@ -27,10 +27,10 @@ Sample structure: `20190821001\12x36 NT SILKMATT 20 SHEETS\"all images"`
 
 Output:
 
-Creates csv file.
-Adds orderid and orderdetails to left and right TestFrames and checks for overflow.
-Maps images to ImageFrame and merges Docoument.
-Checks for wrong size images and marks them "TODO".
-Gets special sheet details asuming anything as special sheet if filename has more than 3 characters (eg: 10 emboss).
-Saves and exports merged Document asynchronously to HQsRGB Preset.
-Writes export report to text file and alerts the same.
+1. Creates csv file.
+2. Adds orderid and orderdetails to left and right TestFrames and checks for overflow.
+3. Maps images to ImageFrame and merges Docoument.
+4. Checks for wrong size images and marks them "TODO".
+5. Gets special sheet details asuming anything as special sheet if filename has more than 3 characters (eg: 10 emboss).
+6. Saves and exports merged Document asynchronously to HQsRGB Preset.
+7. Writes export report to text file and alerts the same.

@@ -14,8 +14,7 @@ To install:
     
 ## Image Processing
 
-### Example1: To process a double page photobook of size 12"x36" 
-###           with first and last pages as single pages and rest double pages
+### Example1: To process a double page photobook of size 12"x36" with first and last pages as single pages and rest double pages
 
 Folder structure: `"orderid"\"orderdetails"\"all images go here"`
 Sample structure: `20190821001\12x36 NT SILKMATT 20 SHEETS\"all images"`

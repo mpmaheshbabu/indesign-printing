@@ -195,7 +195,7 @@ function getSpecialMediaDetails(doc) {
                 continue;
             }
             if ((thisTextFrame.label.match("leftTextFrame") && content.indexOf("right") > -1) || (thisTextFrame.label.match("rightTextFrame") && content.indexOf("left") > -1))
-					content = ""
+					content = content.replace((new RegExp(/\D+/g)),"");
             thisTextFrame.contents = content;
             if (content.length > 5)
                 specialMedia = specialMedia + thisTextFrame.parentPage.name + "\t" + content + "\n";

@@ -12,7 +12,7 @@ To install:
 4. Define print preset `HQsRGB`, open Indesign and navigate to the following 
     `File > Adobe PDF Presets > Define` 
     
-## Image Processing
+## Image Processing using `image to pdf.jsx`
 
 ### Example1: To process a double page photobook of size 12"x36" with first and last pages as single pages and rest double pages
 
@@ -32,5 +32,5 @@ Output:
 3. Maps images to ImageFrame and merges Docoument.
 4. Checks for wrong size images and marks them "TODO".
 5. Gets special sheet details asuming anything as special sheet if filename has more than 3 characters (eg: 10 emboss).
-6. Saves and exports merged Document asynchronously to HQsRGB Preset.
+6. Saves and exports merged Document to PDF.
 7. Writes export report to text file and alerts the same.

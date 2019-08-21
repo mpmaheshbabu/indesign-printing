@@ -14,8 +14,23 @@ To install:
     
 ## Image Processing
 
-### Example1 : To process a double page photobook of size 12"x36"
+### Example1: To process a double page photobook of size 12"x36" 
+###           with first and last pages as single pages and rest double pages
 
-Folder structure : `orderid\orderdetails\"all images go here"`
+Folder structure: `"orderid"\"orderdetails"\"all images go here"`
+Sample structure: `20190821001\12x36 NT SILKMATT 20 SHEETS\"all images"`
 
-1. Open 12x36 template in "double page spread" folder
+1. Reaname images to equal number of digits followed by additional details (eg: 01,02,...21). 
+2. Open 12x36 template in `photobook-oppodots\double page spread\` folder.
+3. Save it to folder in which images are present.
+4. Run `image to pdf.jsx` from Scripts Panel.
+
+Output:
+
+Creates csv file.
+Adds orderid and orderdetails to left and right TestFrames and checks for overflow.
+Maps images to ImageFrame and merges Docoument.
+Checks for wrong size images and marks them "TODO".
+Gets special sheet details asuming anything as special sheet if filename has more than 3 characters (eg: 10 emboss).
+Saves and exports merged Document asynchronously to HQsRGB Preset.
+Writes export report to text file and alerts the same.
